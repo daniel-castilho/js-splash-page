@@ -6,14 +6,14 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: Lato, sans-serif;
   color: #54575A;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F3F8F7, 49.91%, #FFF9F5 94.19%);
-  overflow-x: hidden;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #F3F8F7 49.91%, #FFF9F5 94.19%);
 }
 
 .wrapper {
-  positive: relative;
+  position: relative;
   width: 1440px;
   height: 1379px;
   margin: auto;
@@ -33,8 +33,6 @@ body {
   height: 135px;
   left: 221px;
   top: 236px;
-
-  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 64px;
@@ -47,7 +45,6 @@ body {
   height: 96px;
   left: 221px;
   top: 403px;
-
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -69,15 +66,15 @@ body {
 
 .google-play-btn {
   position: absolute;
-  width: 156.19px;
-  height: 46.28px;
+  width: 158.19px;
+  height: 48.28px;
   left: 381.81px;
   top: 531px;
 }
 
 .google-play-btn img {
-  width: 138.44px;
-  height: 46.28px;
+  width: 158.19px;
+  height: 48.28px;
 }
 
 .main-image-container {
@@ -92,12 +89,12 @@ body {
   height: 411.15px;
 }
 
-.product-img {
+.profile-img {
   position: absolute;
-  height: 222px;
+  height: 444px;
   left: 737px;
   right: 479px;
-  top: 1157px;
+  top: 686px;
 }
 
 .orders-img {
@@ -108,6 +105,14 @@ body {
   top: 913px;
 }
 
+.home-img {
+  position: absolute;
+  height: 470px; /* Had to change to show full box shadow */
+  left: 995px;
+  right: 221px;
+  top: 908px;
+}
+
 .cart-img {
   position: absolute;
   height: 222px;
@@ -116,10 +121,44 @@ body {
   top: 1157px;
 }
 
-.home-img {
+.product-img {
   position: absolute;
-  height: 470px;
-  left: 995px;
-  right: 221px;
-  top: 908px;
+  height: 222px; /* Had to cut in half */
+  left: 737px;
+  right: 479px;
+  top: 1157px;
+}
+
+/* Background Toggles */
+.background-toggles {
+  position: absolute;
+  right: 150px;
+  top: 70px;
+  display: flex;
+}
+
+.background-toggles > div {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Background Colors */
+.background-1 {
+  background-color: #efeff0;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%239C92AC' fill-opacity='0.13' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.background-2 {
+  background-color: #c4a1f7;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23c8a2ee' fill-opacity='0.13' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.background-3 {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
